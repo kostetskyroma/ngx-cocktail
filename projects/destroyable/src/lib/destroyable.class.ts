@@ -1,14 +1,11 @@
-import { Directive, OnDestroy } from "@angular/core";
-import { Subject } from "rxjs";
+import { Directive } from '@angular/core';
+import { Subject } from 'rxjs';
+import { Destroyable } from './destroyable.interface';
 
-import { IDestroyable } from "./destroyable.interface";
+const destroySubject = Symbol('destroyed');
 
-const destroySubject = Symbol("destroyed");
-
-@Directive({
-  selector: "[appDestroyable]",
-})
-export class Destroyable implements IDestroyable, OnDestroy {
+@Directive()
+export abstract class Destroyed implements Destroyable {
   private readonly [destroySubject] = new Subject();
   readonly destroyed$ = this[destroySubject].asObservable();
 

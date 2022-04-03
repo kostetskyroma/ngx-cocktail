@@ -1,6 +1,6 @@
 {
   "name": "@ngx-cocktail/destroyable",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0",

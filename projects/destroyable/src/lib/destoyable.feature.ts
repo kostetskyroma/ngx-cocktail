@@ -1,13 +1,10 @@
 import { OnDestroy, ɵDirectiveDef, Type } from '@angular/core';
 import { Writable } from '@ngx-cocktail/common';
-import { Observable } from 'rxjs';
 
-import { Destroyable } from './destroyable.class';
-import { IDestroyable } from './destroyable.interface';
+import { Destroyed } from './destroyable.class';
+import { Destroyable } from './destroyable.interface';
 
-export function DestroyableFeature<R>(
-  selector?: (x: R) => Observable<unknown>
-) {
+export function DestroyableFeature() {
   return <T extends Type<unknown>>(
     directiveDef: Writable<ɵDirectiveDef<T>>
   ) => {
@@ -16,14 +13,14 @@ export function DestroyableFeature<R>(
 
     directiveDef.factory = () => {
       const instance = factory?.(type) as T;
-      const destroyable = Reflect.construct(Destroyable, []) as IDestroyable;
+      const destroyed = Reflect.construct(Destroyed, []) as Destroyable;
 
-      Object.assign(instance, destroyable);
+      Object.assign(instance, destroyed);
 
-      Object.assign(directiveDef, {
-        onDestroy() {
+      Object.assign(directiveDef.type.prototype, {
+        ngOnDestroy() {
           ngOnDestroy?.call(instance);
-          destroyable.ngOnDestroy?.call(instance);
+          destroyed.ngOnDestroy?.call(instance);
         },
       });
 
