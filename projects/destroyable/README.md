@@ -12,14 +12,14 @@ The library contains code for destoyable feature
         import { DestroyableFeature } from '@ngx-cocktail/destroyable';
 
         @Features([DestroyableFeature()])
-        export class DestroyableComponent implements OnInit {
-        public destroyed$!: Observable<unknown>;
+        export class AppComponent implements OnInit {
+            public destroyed$!: Observable<unknown>;
 
-        ngOnInit(): void {
-            interval(1000)
-            .pipe(takeUntil(this.destroyed$))
-            .subscribe((value) => {
-                ...
-            });
-        }
+            ngOnInit(): void {
+                interval(1000)
+                .pipe(takeUntil(this.destroyed$))
+                .subscribe((value) => {
+                    ...
+                });
+            }
         }
