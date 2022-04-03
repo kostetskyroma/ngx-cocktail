@@ -1,24 +1,25 @@
-# Destroyable
+# @ngx-cocktail/destroyable
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+The library contains code for destoyable feature
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name --project destroyable` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project destroyable`.
-> Note: Don't forget to add `--project destroyable` or else it will be added to the default project in your `angular.json` file. 
+        npm install @ngx-cocktail/common @ngx-cocktail/destroyable
 
-## Build
+## How to use
 
-Run `ng build destroyable` to build the project. The build artifacts will be stored in the `dist/` directory.
+        import { Features } from '@ngx-cocktail/common';
+        import { DestroyableFeature } from '@ngx-cocktail/destroyable';
 
-## Publishing
+        @Features([DestroyableFeature()])
+        export class DestroyableComponent implements OnInit {
+        public destroyed$!: Observable<unknown>;
 
-After building your library with `ng build destroyable`, go to the dist folder `cd dist/destroyable` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test destroyable` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+        ngOnInit(): void {
+            interval(1000)
+            .pipe(takeUntil(this.destroyed$))
+            .subscribe((value) => {
+                ...
+            });
+        }
+        }

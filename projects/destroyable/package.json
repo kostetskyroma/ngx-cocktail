@@ -1,10 +1,10 @@
 {
   "name": "@ngx-cocktail/destroyable",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0",
-    "@ngx-cocktail/common": "^0.0.1"
+    "@ngx-cocktail/common": "^0.0.3"
   },
   "dependencies": {
     "tslib": "^2.3.0"
