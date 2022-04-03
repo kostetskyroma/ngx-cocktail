@@ -4,6 +4,16 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "common": [
+        "dist/common/common",
+        "dist/common"
+      ],
+      "destroyable": [
+        "dist/destroyable/destroyable",
+        "dist/destroyable"
+      ]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
