@@ -23,3 +23,11 @@ The library contains code for destoyable feature
                 });
             }
         }
+
+## How to publish
+
+1. Commit & push your changes
+2. Update a version in package.json
+3. Run `npm run build:destroyable`
+4. Navigate to `dist/destroyable`
+5. Run `npm publish`

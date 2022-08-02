@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:common": "npm run build common",
+    "build:destroyable": "npm run build destroyable",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
