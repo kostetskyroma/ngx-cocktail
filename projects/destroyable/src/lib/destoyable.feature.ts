@@ -17,12 +17,10 @@ export function DestroyableFeature() {
 
       Object.assign(instance, destroyed);
 
-      Object.assign(directiveDef.type.prototype, {
-        ngOnDestroy() {
-          ngOnDestroy?.call(instance);
-          destroyed.ngOnDestroy?.call(instance);
-        },
-      });
+      directiveDef.type.prototype.ngOnDestroy = function () {
+        ngOnDestroy?.call(this);
+        destroyed.ngOnDestroy?.call(this);
+      };
 
       return instance;
     };
