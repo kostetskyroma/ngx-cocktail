@@ -1,0 +1,5 @@
+<div><p>DestroyableByNgif</p></div>
+<button (click)="show = !show">
+  {{ show ? "Close Child" : "Open Child" }}
+</button>
+<app-destoyable-by-ngif-child *ngIf="show"></app-destoyable-by-ngif-child>
