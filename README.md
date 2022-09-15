@@ -18,6 +18,18 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 The library contains common code for ngx-cocktail features
 
+## Install
+
+        npm install @ngx-cocktail/common
+
+## How to use
+
+        import { Features } from '@ngx-cocktail/common';
+
+        @Features([YourFeature()])
+        export class AppComponent implements OnInit {}
+
+
 
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/common)
 <br>
@@ -27,7 +39,28 @@ The library contains common code for ngx-cocktail features
 
 The library contains code for destoyable feature
 
+## Install
 
+        npm install @ngx-cocktail/common @ngx-cocktail/destroyable
+
+## How to use
+
+        import { Features } from '@ngx-cocktail/common';
+        import { DestroyableFeature } from '@ngx-cocktail/destroyable';
+
+        @Features([DestroyableFeature()])
+        export class AppComponent implements OnInit {
+            public destroyed$!: Observable<unknown>;
+
+            ngOnInit(): void {
+                interval(1000)
+                .pipe(takeUntil(this.destroyed$))
+                .subscribe((value) => {
+                    ...
+                });
+            }
+        }
+        
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/destroyable)
 <br>
 [NPM](https://www.npmjs.com/package/@ngx-cocktail/destroyable)
