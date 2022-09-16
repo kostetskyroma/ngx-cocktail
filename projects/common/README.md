@@ -15,6 +15,13 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 The library contains common code for ngx-cocktail features
 
+## Compatibility
+
+| Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
+
+
 ## Install
 
         npm install @ngx-cocktail/common
