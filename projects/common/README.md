@@ -10,16 +10,21 @@
 [![Support](https://img.shields.io/badge/Support-Angular%2011%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2012%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2013%2B-blue.svg?style=flat-square)]()
+[![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
 
 Warning! This feature is experimental and can include known and undiscovered errors.
 
 The library contains common code for ngx-cocktail features
 
+## What's New
+
+- Angular 14 support 🥳
+
 ## Compatibility
 
-| Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
-| ----------- | ----------- | ----------- | ----------- | ---------- |
-| >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
+| Angular 14  | Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ---------- |
+| >=`v14.0.1` | >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
 
 ## Installation
 

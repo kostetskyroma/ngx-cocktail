@@ -10,6 +10,7 @@
 [![Support](https://img.shields.io/badge/Support-Angular%2011%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2012%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2013%2B-blue.svg?style=flat-square)]()
+[![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
 
 The package allows a developers to use features from Angular Ivy.
 
@@ -22,11 +23,15 @@ Additionally, custom decorators are by default not tree-shakable.
 
 Warning! This feature is experimental and can include known and undiscovered errors.
 
+## What's New
+
+- Angular 14 support 🥳
+
 ## Compatibility
 
-| Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
-| ----------- | ----------- | ----------- | ----------- | ---------- |
-| >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
+| Angular 14  | Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ---------- |
+| >=`v14.0.1` | >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
 
 ## @ngx-cocktail/common
 
@@ -72,7 +77,6 @@ The library contains code for destoyable feature
                 });
             }
         }
-
 
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/destroyable)
 <br>
