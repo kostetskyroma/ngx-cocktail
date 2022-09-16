@@ -18,22 +18,21 @@ The library contains common code for ngx-cocktail features
 ## Compatibility
 
 | Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ---------- |
 | >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
 
-
-## Install
+## Installation
 
         npm install @ngx-cocktail/common
 
-## How to use
+## Usage
 
         import { Features } from '@ngx-cocktail/common';
 
         @Features([YourFeature()])
         export class AppComponent implements OnInit {}
 
-## How to publish
+## Publishing
 
 1. Commit & push your changes
 2. Update a version in package.json

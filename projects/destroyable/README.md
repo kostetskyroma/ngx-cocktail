@@ -18,15 +18,14 @@ The library contains code for destoyable feature
 ## Compatibility
 
 | Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ---------- |
 | >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
 
-
-## Install
+## Installation
 
         npm install @ngx-cocktail/common @ngx-cocktail/destroyable
 
-## How to use
+## Usage
 
         import { Features } from '@ngx-cocktail/common';
         import { DestroyableFeature } from '@ngx-cocktail/destroyable';
@@ -44,7 +43,7 @@ The library contains code for destoyable feature
             }
         }
 
-## How to publish
+## Publishing
 
 1. Commit & push your changes
 2. Update a version in package.json

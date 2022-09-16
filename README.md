@@ -20,34 +20,28 @@ Component features are mixins for components. They add, remove or modify traits 
 Custom decorators are questionable. After several years, they are still not ratified in an ECMAScript standard. Their syntax or semantics might change. Hence, they might never make it into the language, rendering them in limbo in TypeScript and other transpiled languages.
 Additionally, custom decorators are by default not tree-shakable.
 
-
-
-
-Warning! This feature is experimental and can include known and undiscovered errors. 
+Warning! This feature is experimental and can include known and undiscovered errors.
 
 ## Compatibility
 
 | Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ---------- |
 | >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
-
 
 ## @ngx-cocktail/common
 
 The library contains common code for ngx-cocktail features
 
-## Install
+## Installation
 
         npm install @ngx-cocktail/common
 
-## How to use
+## Usage
 
         import { Features } from '@ngx-cocktail/common';
 
         @Features([YourFeature()])
         export class AppComponent implements OnInit {}
-
-
 
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/common)
 <br>
@@ -57,11 +51,11 @@ The library contains common code for ngx-cocktail features
 
 The library contains code for destoyable feature
 
-## Install
+## Installation
 
         npm install @ngx-cocktail/common @ngx-cocktail/destroyable
 
-## How to use
+## Usage
 
         import { Features } from '@ngx-cocktail/common';
         import { DestroyableFeature } from '@ngx-cocktail/destroyable';
@@ -78,7 +72,8 @@ The library contains code for destoyable feature
                 });
             }
         }
-        
+
+
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/destroyable)
 <br>
 [NPM](https://www.npmjs.com/package/@ngx-cocktail/destroyable)
