@@ -1,5 +1,16 @@
 # @ngx-cocktail
 
+The package allows a developers to use features from Angular Ivy.
+
+The Angular Ivy runtime introduces a new concept called component features. In the release of Ivy, component features are not publically available. However, component features are applied internally by Angular to all components.
+
+Component features are mixins for components. They add, remove or modify traits at runtime.
+
+Custom decorators are questionable. After several years, they are still not ratified in an ECMAScript standard. Their syntax or semantics might change. Hence, they might never make it into the language, rendering them in limbo in TypeScript and other transpiled languages.
+Additionally, custom decorators are by default not tree-shakable.
+
+Warning! This feature is experimental and can include known and undiscovered errors.
+
 [![GitHub issues](https://img.shields.io/github/issues/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/issues)
 [![GitHub forks](https://img.shields.io/github/forks/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/network)
 [![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
@@ -11,17 +22,6 @@
 [![Support](https://img.shields.io/badge/Support-Angular%2012%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2013%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
-
-The package allows a developers to use features from Angular Ivy.
-
-The Angular Ivy runtime introduces a new concept called component features. In the release of Ivy, component features are not publically available. However, component features are applied internally by Angular to all components.
-
-Component features are mixins for components. They add, remove or modify traits at runtime.
-
-Custom decorators are questionable. After several years, they are still not ratified in an ECMAScript standard. Their syntax or semantics might change. Hence, they might never make it into the language, rendering them in limbo in TypeScript and other transpiled languages.
-Additionally, custom decorators are by default not tree-shakable.
-
-Warning! This feature is experimental and can include known and undiscovered errors.
 
 ## What's New
 

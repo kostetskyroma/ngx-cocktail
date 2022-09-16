@@ -1,5 +1,9 @@
 # @ngx-cocktail/destroyable
 
+The library contains code for destoyable feature.
+
+Warning! This feature is experimental and can include known and undiscovered errors.
+
 [![GitHub issues](https://img.shields.io/github/issues/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/issues)
 [![GitHub forks](https://img.shields.io/github/forks/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/network)
 [![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
@@ -11,10 +15,6 @@
 [![Support](https://img.shields.io/badge/Support-Angular%2012%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2013%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
-
-Warning! This feature is experimental and can include known and undiscovered errors.
-
-The library contains code for destoyable feature
 
 ## What's New
 
