@@ -1,6 +1,6 @@
 {
   "name": "@ngx-cocktail/common",
-  "version": "14.0.1",
+  "version": "14.0.2",
   "peerDependencies": {
     "@angular/common": "^14.2.2",
     "@angular/core": "^14.2.2"
