@@ -25,6 +25,13 @@ Additionally, custom decorators are by default not tree-shakable.
 
 Warning! This feature is experimental and can include known and undiscovered errors. 
 
+## Compatibility
+
+| Angular 13  | Angular 12  | Angular 11  | Angular 10  | Angular 9  |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| >=`v13.0.1` | >=`v12.0.1` | >=`v11.0.1` | >=`v10.0.1` | >=`v9.0.1` |
+
+
 ## @ngx-cocktail/common
 
 The library contains common code for ngx-cocktail features
