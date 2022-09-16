@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-} from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Features } from '@ngx-cocktail/common';
 import { DestroyableFeature } from '@ngx-cocktail/destroyable';
 
