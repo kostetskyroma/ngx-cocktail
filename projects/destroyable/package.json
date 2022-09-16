@@ -8,5 +8,27 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12",
+    "angular 13",
+    "angular 14",
+    "ngx",
+    "ng",
+    "ng 9",
+    "ng 10",
+    "ng 11",
+    "ng 12",
+    "ng 13",
+    "ng 14",
+    "destroyable",
+    "destroy",
+    "features",
+    "ivy",
+    "decorators"
+  ]
 }
