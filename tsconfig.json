@@ -12,6 +12,9 @@
       "destroyable": [
         "dist/destroyable/destroyable",
         "dist/destroyable"
+      ],
+      "title": [
+        "dist/title"
       ]
     },
     "forceConsistentCasingInFileNames": true,

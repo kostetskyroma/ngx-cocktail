@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/destroyable').then((m) => m.DestroyableModule),
   },
+  {
+    path: 'title',
+    loadChildren: () =>
+      import('./features/title/title.module').then((m) => m.TitleModule),
+  },
 ];
 
 @NgModule({

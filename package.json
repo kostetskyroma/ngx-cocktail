@@ -7,6 +7,7 @@
     "build": "ng build",
     "build:common": "npm run build common",
     "build:destroyable": "npm run build destroyable",
+    "build:title": "npm run build title",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

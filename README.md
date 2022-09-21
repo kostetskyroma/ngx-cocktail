@@ -81,3 +81,30 @@ The library contains code for destoyable feature
 [Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/destroyable)
 <br>
 [NPM](https://www.npmjs.com/package/@ngx-cocktail/destroyable)
+
+## @ngx-cocktail/title
+
+The library contains code for title feature.
+
+The feature sets the title of a current HTML document. Underhood, it injects Title from '@angular/platform-browser' and set your custom title.
+
+Notes:
+
+- If there are parent and nested components with TitleFeature, it will use nested.
+- The title should be handled manually defining them on components
+
+## Installation
+
+        npm install @ngx-cocktail/common @ngx-cocktail/title
+
+## Usage
+
+        import { Features } from '@ngx-cocktail/common';
+        import { Title } from '@ngx-cocktail/title';
+
+        @Features([TitleFeature('My Website: My Title')])
+        export class AppComponent implements OnInit {}
+
+[Source](https://github.com/kostetskyroma/ngx-cocktail/tree/master/projects/title)
+<br>
+[NPM](https://www.npmjs.com/package/@ngx-cocktail/title)
