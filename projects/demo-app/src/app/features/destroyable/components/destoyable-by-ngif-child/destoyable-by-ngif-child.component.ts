@@ -9,6 +9,7 @@ import { warnStyle, successStyle } from '../../constants';
   templateUrl: './destoyable-by-ngif-child.component.html',
   styleUrls: ['./destoyable-by-ngif-child.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 @Features([DestroyableFeature()])
 export class DestroyableByNgifChildComponent implements OnInit {

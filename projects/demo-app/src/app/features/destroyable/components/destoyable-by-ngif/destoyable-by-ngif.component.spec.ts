@@ -8,7 +8,7 @@ describe('DestroyableByNgifComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DestroyableByNgifComponent],
+      imports: [DestroyableByNgifComponent],
     }).compileComponents();
   });
 

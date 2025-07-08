@@ -8,9 +8,8 @@ describe('DestroyableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DestroyableComponent ]
-    })
-    .compileComponents();
+      imports: [DestroyableComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

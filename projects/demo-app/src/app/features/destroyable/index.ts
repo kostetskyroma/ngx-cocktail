@@ -1,1 +1,1 @@
-export * from './destroyable.module';
+export * from './routes';

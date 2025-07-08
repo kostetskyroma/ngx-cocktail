@@ -3,12 +3,15 @@ import { Features } from '@ngx-cocktail/common';
 import { DestroyableFeature } from '@ngx-cocktail/destroyable';
 import { interval, Observable, takeUntil } from 'rxjs';
 import { warnStyle, successStyle } from './../../constants';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-destoyable-by-path',
   templateUrl: './destoyable-by-path.component.html',
   styleUrls: ['./destoyable-by-path.component.scss'],
+  imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 @Features([DestroyableFeature()])
 export class DestroyableByPathComponent implements OnInit {

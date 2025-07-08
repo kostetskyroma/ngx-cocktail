@@ -1,12 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { DestroyableComponent } from './destroyable.component';
 import {
   DestroyableByNgifComponent,
   DestroyableByPathComponent,
 } from './components';
 
-const routes: Routes = [
+export const destroyableRoutes: Routes = [
   {
     path: '',
     component: DestroyableComponent,
@@ -20,9 +19,3 @@ const routes: Routes = [
     component: DestroyableByPathComponent,
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-})
-export class DestroyableRoutingModule {}

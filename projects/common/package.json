@@ -1,9 +1,9 @@
 {
   "name": "@ngx-cocktail/common",
-  "version": "18.0.0",
+  "version": "19.0.0",
   "peerDependencies": {
-    "@angular/common": "^18.2.13",
-    "@angular/core": "^18.2.13"
+    "@angular/common": "^19.2.14",
+    "@angular/core": "^19.2.14"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -21,6 +21,7 @@
     "angular 16",
     "angular 17",
     "angular 18",
+    "angular 19",
     "ngx",
     "ng",
     "ng 9",
@@ -33,6 +34,7 @@
     "ng 16",
     "ng 17",
     "ng 18",
+    "ng 19",
     "common",
     "features",
     "ivy",

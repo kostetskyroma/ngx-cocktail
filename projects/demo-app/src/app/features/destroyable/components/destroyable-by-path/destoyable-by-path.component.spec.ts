@@ -8,7 +8,7 @@ describe('DestroyableByPath', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DestroyableByPathComponent],
+      imports: [DestroyableByPathComponent],
     }).compileComponents();
   });
 

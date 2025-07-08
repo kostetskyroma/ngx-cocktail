@@ -8,9 +8,8 @@ describe('TitleNestedSecondComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TitleNestedSecondComponent ]
-    })
-    .compileComponents();
+      imports: [TitleNestedSecondComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TitleNestedSecondComponent);
     component = fixture.componentInstance;

@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { TitleNestedComponent, TitleNestedSecondComponent } from './components';
 import { TitleComponent } from './title.component';
 
-const routes: Routes = [
+export const titleRoutes: Routes = [
   {
     path: '',
     component: TitleComponent,
@@ -19,9 +18,3 @@ const routes: Routes = [
     ],
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-})
-export class TitleRoutingModule {}
