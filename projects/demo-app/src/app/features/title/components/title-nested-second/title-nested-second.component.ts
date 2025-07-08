@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Features } from '@ngx-cocktail/common';
-import { TitleFeature } from 'projects/title/src/public-api';
+import { Features, TitleFeature } from 'projects/title/src/public-api';
 
 @Component({
   selector: 'app-title-nested-second',

@@ -1,6 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Features } from '@ngx-cocktail/common';
-import { DestroyableFeature } from '@ngx-cocktail/destroyable';
+import { Features, DestroyableFeature } from '@ngx-cocktail/destroyable';
 import { interval, Observable, takeUntil } from 'rxjs';
 import { warnStyle, successStyle } from './../../constants';
 import { RouterLink } from '@angular/router';

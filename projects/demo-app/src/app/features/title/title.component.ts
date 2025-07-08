@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Features } from '@ngx-cocktail/common';
-import { TitleFeature } from '@ngx-cocktail/title';
+import { Features, TitleFeature } from '@ngx-cocktail/title';
 
 @Component({
   selector: 'app-title',
