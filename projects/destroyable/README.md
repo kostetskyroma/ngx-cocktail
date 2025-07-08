@@ -34,12 +34,11 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 ## Installation
 
-        npm install @ngx-cocktail/common @ngx-cocktail/destroyable
+        npm install @ngx-cocktail/destroyable
 
 ## Usage
 
-        import { Features } from '@ngx-cocktail/common';
-        import { DestroyableFeature } from '@ngx-cocktail/destroyable';
+        import { DestroyableFeature, Features } from '@ngx-cocktail/destroyable';
 
         @Features([DestroyableFeature()])
         export class AppComponent implements OnInit {
