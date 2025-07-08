@@ -34,7 +34,7 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 | Angular 18  | Angular 17  | Angular 16  | Angular 15  | Angular 14  |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| >=`v18.0.0` | >=`v17.0.0` | >=`v16.0.0` | >=`v15.0.0` | >=`v14.0.1` |
+| >=`v18.0.1` | >=`v17.0.0` | >=`v16.0.0` | >=`v15.0.0` | >=`v14.0.1` |
 
 ## Installation
 

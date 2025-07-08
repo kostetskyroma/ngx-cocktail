@@ -3,3 +3,4 @@
  */
 
 export * from './lib/title.feature';
+export { Features } from '@ngx-cocktail/common';
