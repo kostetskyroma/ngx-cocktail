@@ -1,10 +1,10 @@
 {
   "name": "@ngx-cocktail/destroyable",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "peerDependencies": {
-    "@angular/common": "^19.2.14",
-    "@angular/core": "^19.2.14",
-    "@ngx-cocktail/common": "^19.0.0"
+    "@angular/common": "^20.0.6",
+    "@angular/core": "^20.0.6",
+    "@ngx-cocktail/common": "^20.0.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -23,6 +23,7 @@
     "angular 17",
     "angular 18",
     "angular 19",
+    "angular 20",
     "ngx",
     "ng",
     "ng 9",
@@ -36,6 +37,7 @@
     "ng 17",
     "ng 18",
     "ng 19",
+    "ng 20",
     "destroyable",
     "destroy",
     "features",
