@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Features } from '@ngx-cocktail/common';
-import { TitleFeature } from '../../../../../title/src/lib/title.feature';
+import { TitleFeature } from '@ngx-cocktail/title';
 
 @Component({
   selector: 'app-title',

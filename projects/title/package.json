@@ -1,10 +1,10 @@
 {
   "name": "@ngx-cocktail/title",
-  "version": "14.0.1",
+  "version": "15.0.0",
   "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0",
-    "@ngx-cocktail/common": "^14.0.2"
+    "@angular/common": "^15.2.10",
+    "@angular/core": "^15.2.10",
+    "@ngx-cocktail/common": "^15.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -13,9 +13,11 @@
   "keywords": [
     "angular",
     "angular 14",
+    "angular 15",
     "ngx",
     "ng",
     "ng 14",
+    "ng 15",
     "destroyable",
     "destroy",
     "features",
