@@ -63,12 +63,11 @@ The library contains code for destoyable feature
 
 ## Installation
 
-        npm install @ngx-cocktail/common @ngx-cocktail/destroyable
+        npm install @ngx-cocktail/destroyable
 
 ## Usage
 
-        import { Features } from '@ngx-cocktail/common';
-        import { DestroyableFeature } from '@ngx-cocktail/destroyable';
+        import { DestroyableFeature, Features } from '@ngx-cocktail/destroyable';
 
         @Features([DestroyableFeature()])
         export class AppComponent implements OnInit {
@@ -100,12 +99,11 @@ Notes:
 
 ## Installation
 
-        npm install @ngx-cocktail/common @ngx-cocktail/title
+        npm install @ngx-cocktail/title
 
 ## Usage
 
-        import { Features } from '@ngx-cocktail/common';
-        import { Title } from '@ngx-cocktail/title';
+        import { Title, Features } from '@ngx-cocktail/title';
 
         @Features([TitleFeature('My Website: My Title')])
         export class AppComponent implements OnInit {}
