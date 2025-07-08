@@ -1,10 +1,10 @@
 {
   "name": "@ngx-cocktail/destroyable",
-  "version": "15.0.0",
+  "version": "16.0.0",
   "peerDependencies": {
-    "@angular/common": "^15.2.10",
-    "@angular/core": "^15.2.10",
-    "@ngx-cocktail/common": "^15.0.0"
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@ngx-cocktail/common": "^16.0.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,6 +19,7 @@
     "angular 13",
     "angular 14",
     "angular 15",
+    "angular 16",
     "ngx",
     "ng",
     "ng 9",
@@ -28,6 +29,7 @@
     "ng 13",
     "ng 14",
     "ng 15",
+    "ng 16",
     "destroyable",
     "destroy",
     "features",

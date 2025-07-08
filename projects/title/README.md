@@ -22,16 +22,17 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 [![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2015%2B-blue.svg?style=flat-square)]()
+[![Support](https://img.shields.io/badge/Support-Angular%2016%2B-blue.svg?style=flat-square)]()
 
 ## What's New
 
-- Angular 15 support 🥳
+- Angular 16 support 🥳
 
 ## Compatibility
 
-| Angular 15  | Angular 14  |
-| ----------- | ----------- |
-| >=`v15.0.0` | >=`v14.0.1` |
+| Angular 16  | Angular 15  | Angular 14  |
+| ----------- | ----------- | ----------- |
+| >=`v16.0.0` | >=`v15.0.0` | >=`v14.0.1` |
 
 ## Installation
 
