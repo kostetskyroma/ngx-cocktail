@@ -40,12 +40,11 @@ Warning! This feature is experimental and can include known and undiscovered err
 
 ## Installation
 
-        npm install @ngx-cocktail/common @ngx-cocktail/title
+        npm install @ngx-cocktail/title
 
 ## Usage
 
-        import { Features } from '@ngx-cocktail/common';
-        import { Title } from '@ngx-cocktail/title';
+        import { Title, Features } from '@ngx-cocktail/title';
 
         @Features([TitleFeature('My Website: My Title')])
         export class AppComponent implements OnInit {}
