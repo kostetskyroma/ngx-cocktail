@@ -343,6 +343,45 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - ⭐ [Star the project](https://github.com/kostetskyroma/ngx-cocktail/stargazers) - Show your support
 - 🐛 [Report bugs](https://github.com/kostetskyroma/ngx-cocktail/issues/new) - Help improve the library
 
+## 📦 Publishing
+
+### Publishing Individual Packages
+
+Each package can be published independently:
+
+#### @ngx-cocktail/common
+
+1. Commit & push your changes
+2. Update a version in `projects/common/package.json`
+3. Run `npm run build:common`
+4. Run `cd dist/common`
+5. Run `npm publish`
+
+#### @ngx-cocktail/destroyable
+
+1. Commit & push your changes
+2. Update a version in `projects/destroyable/package.json`
+3. Run `npm run build:destroyable`
+4. Run `cd dist/destroyable`
+5. Run `npm publish`
+
+#### @ngx-cocktail/title
+
+1. Commit & push your changes
+2. Update a version in `projects/title/package.json`
+3. Run `npm run build:title`
+4. Run `cd dist/title`
+5. Run `npm publish`
+
+### Publishing All Packages
+
+To publish all packages at once:
+
+1. Commit & push your changes
+2. Update versions in all package.json files
+3. Run `npm run build`
+4. Navigate to each `dist/` directory and run `npm publish`
+
 ## 🎉 Acknowledgments
 
 - The Angular team for the amazing Ivy architecture

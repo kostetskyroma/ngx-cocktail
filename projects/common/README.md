@@ -245,6 +245,14 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 - 📖 [Documentation](https://github.com/kostetskyroma/ngx-cocktail)
 - ⭐ [Star the project](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
 
+## 📦 Publishing
+
+1. Commit & push your changes
+2. Update a version in package.json
+3. Run `npm run build:common`
+4. Run `cd dist/common`
+5. Run `npm publish`
+
 ---
 
 Made with ❤️ by the ngx-cocktail team
