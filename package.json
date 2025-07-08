@@ -1,6 +1,6 @@
 {
   "name": "ngx-cocktail",
-  "version": "0.0.0",
+  "version": "17.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,25 +12,25 @@
     "test": "ng test"
   },
   "dependencies": {
-    "@angular/animations": "^16.2.12",
-    "@angular/common": "^16.2.12",
-    "@angular/compiler": "^16.2.12",
-    "@angular/core": "^16.2.12",
-    "@angular/forms": "^16.2.12",
-    "@angular/platform-browser": "^16.2.12",
-    "@angular/platform-browser-dynamic": "^16.2.12",
-    "@angular/router": "^16.2.12",
+    "@angular/animations": "^17.3.12",
+    "@angular/common": "^17.3.12",
+    "@angular/compiler": "^17.3.12",
+    "@angular/core": "^17.3.12",
+    "@angular/forms": "^17.3.12",
+    "@angular/platform-browser": "^17.3.12",
+    "@angular/platform-browser-dynamic": "^17.3.12",
+    "@angular/router": "^17.3.12",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.3",
-    "@ngx-cocktail/common": "^16.0.0",
-    "@ngx-cocktail/destroyable": "^16.0.0",
-    "@ngx-cocktail/title": "^16.0.0"
+    "zone.js": "~0.14.10",
+    "@ngx-cocktail/common": "^17.0.0",
+    "@ngx-cocktail/destroyable": "^17.0.0",
+    "@ngx-cocktail/title": "^17.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.16",
-    "@angular/cli": "^16.2.16",
-    "@angular/compiler-cli": "^16.2.12",
+    "@angular-devkit/build-angular": "^17.3.17",
+    "@angular/cli": "^17.3.17",
+    "@angular/compiler-cli": "^17.3.12",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
@@ -39,8 +39,8 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "ng-packagr": "^16.2.3",
-    "typescript": "~5.1.6"
+    "ng-packagr": "^17.3.0",
+    "typescript": "~5.4.5"
   },
   "keywords": [
     "angular",
@@ -50,6 +50,9 @@
     "angular 12",
     "angular 13",
     "angular 14",
+    "angular 15",
+    "angular 16",
+    "angular 17",
     "ngx",
     "ng",
     "ng 9",
@@ -59,6 +62,8 @@
     "ng 13",
     "ng 14",
     "ng 15",
+    "ng 16",
+    "ng 17",
     "common",
     "destroyable",
     "destroy",
