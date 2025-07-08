@@ -1,6 +1,6 @@
 {
   "name": "ngx-cocktail",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,25 +12,25 @@
     "test": "ng test"
   },
   "dependencies": {
-    "@angular/animations": "^17.3.12",
-    "@angular/common": "^17.3.12",
-    "@angular/compiler": "^17.3.12",
-    "@angular/core": "^17.3.12",
-    "@angular/forms": "^17.3.12",
-    "@angular/platform-browser": "^17.3.12",
-    "@angular/platform-browser-dynamic": "^17.3.12",
-    "@angular/router": "^17.3.12",
+    "@angular/animations": "^18.2.13",
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
+    "@angular/platform-browser": "^18.2.13",
+    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/router": "^18.2.13",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10",
-    "@ngx-cocktail/common": "^17.0.0",
-    "@ngx-cocktail/destroyable": "^17.0.0",
-    "@ngx-cocktail/title": "^17.0.0"
+    "@ngx-cocktail/common": "^18.0.0",
+    "@ngx-cocktail/destroyable": "^18.0.0",
+    "@ngx-cocktail/title": "^18.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.17",
-    "@angular/cli": "^17.3.17",
-    "@angular/compiler-cli": "^17.3.12",
+    "@angular-devkit/build-angular": "^18.2.20",
+    "@angular/cli": "^18.2.20",
+    "@angular/compiler-cli": "^18.2.13",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
@@ -39,7 +39,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "ng-packagr": "^17.3.0",
+    "ng-packagr": "^18.2.1",
     "typescript": "~5.4.5"
   },
   "keywords": [
@@ -53,6 +53,7 @@
     "angular 15",
     "angular 16",
     "angular 17",
+    "angular 18",
     "ngx",
     "ng",
     "ng 9",
@@ -64,6 +65,7 @@
     "ng 15",
     "ng 16",
     "ng 17",
+    "ng 18",
     "common",
     "destroyable",
     "destroy",

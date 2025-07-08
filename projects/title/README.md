@@ -24,16 +24,17 @@ Warning! This feature is experimental and can include known and undiscovered err
 [![Support](https://img.shields.io/badge/Support-Angular%2015%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2016%2B-blue.svg?style=flat-square)]()
 [![Support](https://img.shields.io/badge/Support-Angular%2017%2B-blue.svg?style=flat-square)]()
+[![Support](https://img.shields.io/badge/Support-Angular%2018%2B-blue.svg?style=flat-square)]()
 
 ## What's New
 
-- Angular 17 support 🥳
+- Angular 18 support 🥳
 
 ## Compatibility
 
-| Angular 17  | Angular 16  | Angular 15  | Angular 14  |
-| ----------- | ----------- | ----------- | ----------- |
-| >=`v17.0.0` | >=`v16.0.0` | >=`v15.0.0` | >=`v14.0.1` |
+| Angular 18  | Angular 17  | Angular 16  | Angular 15  | Angular 14  |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| >=`v18.0.0` | >=`v17.0.0` | >=`v16.0.0` | >=`v15.0.0` | >=`v14.0.1` |
 
 ## Installation
 

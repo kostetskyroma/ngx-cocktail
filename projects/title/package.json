@@ -1,10 +1,10 @@
 {
   "name": "@ngx-cocktail/title",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "peerDependencies": {
-    "@angular/common": "^17.2.12",
-    "@angular/core": "^17.2.12",
-    "@ngx-cocktail/common": "^17.0.0"
+    "@angular/common": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@ngx-cocktail/common": "^18.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -16,12 +16,14 @@
     "angular 15",
     "angular 16",
     "angular 17",
+    "angular 18",
     "ngx",
     "ng",
     "ng 14",
     "ng 15",
     "ng 16",
     "ng 17",
+    "ng 18",
     "title",
     "titles",
     "features",
