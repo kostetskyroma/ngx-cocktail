@@ -34,7 +34,7 @@ A foundational Angular library that provides the core infrastructure for feature
 npm install @ngx-cocktail/common
 
 # Specific Angular version via dist-tag
-npm install @ngx-cocktail/common@v18
+npm install @ngx-cocktail/common@ng18
 ```
 
 ### Basic Usage
@@ -264,7 +264,7 @@ cd dist/common && npm publish --access public
 **Patch on an older version** (use `--tag` to avoid overwriting `latest`):
 ```bash
 npm run build:common
-cd dist/common && npm publish --tag v18 --access public
+cd dist/common && npm publish --tag ng18 --access public
 ```
 
 See the [root README](https://github.com/kostetskyroma/ngx-cocktail#-publishing) for the full dist-tag workflow.

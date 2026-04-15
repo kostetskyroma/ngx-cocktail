@@ -30,7 +30,7 @@ A lightweight Angular library that provides declarative document title managemen
 npm install @ngx-cocktail/title
 
 # Specific Angular version via dist-tag
-npm install @ngx-cocktail/title@v18
+npm install @ngx-cocktail/title@ng18
 ```
 
 ### Basic Usage
@@ -197,7 +197,7 @@ cd dist/title && npm publish --access public
 **Patch on an older version** (use `--tag` to avoid overwriting `latest`):
 ```bash
 npm run build:title
-cd dist/title && npm publish --tag v18 --access public
+cd dist/title && npm publish --tag ng18 --access public
 ```
 
 See the [root README](https://github.com/kostetskyroma/ngx-cocktail#-publishing) for the full dist-tag workflow.

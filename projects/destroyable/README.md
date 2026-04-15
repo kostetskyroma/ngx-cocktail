@@ -29,7 +29,7 @@ A lightweight Angular library that provides automatic subscription cleanup throu
 npm install @ngx-cocktail/destroyable
 
 # Specific Angular version via dist-tag
-npm install @ngx-cocktail/destroyable@v18
+npm install @ngx-cocktail/destroyable@ng18
 ```
 
 ### Basic Usage
@@ -204,7 +204,7 @@ cd dist/destroyable && npm publish --access public
 **Patch on an older version** (use `--tag` to avoid overwriting `latest`):
 ```bash
 npm run build:destroyable
-cd dist/destroyable && npm publish --tag v18 --access public
+cd dist/destroyable && npm publish --tag ng18 --access public
 ```
 
 See the [root README](https://github.com/kostetskyroma/ngx-cocktail#-publishing) for the full dist-tag workflow.
