@@ -1,0 +1,104 @@
+<section class="py-16 border-t border-zinc-800/50">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Section header -->
+    <div class="flex items-start gap-4 mb-10">
+      <div class="flex-1">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="px-2 py-1 rounded text-xs font-mono font-semibold bg-zinc-800 text-zinc-400">
+            @ngx-cocktail/destroyable
+          </span>
+          <span class="text-xs text-zinc-600">npm install @ngx-cocktail/destroyable</span>
+        </div>
+        <h2 class="text-2xl font-bold text-zinc-100">DestroyableFeature</h2>
+        <p class="mt-1 text-zinc-500 text-sm">
+          Injects <code class="text-zinc-300 font-mono">destroyed$</code> — an Observable that completes when the component is destroyed.
+          No <code class="text-zinc-300 font-mono">Subject</code>, no <code class="text-zinc-300 font-mono">ngOnDestroy</code> boilerplate.
+        </p>
+      </div>
+    </div>
+
+    <!-- Code diff + live demo -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Left: before/after code -->
+      <div class="space-y-3">
+        <app-code-snippet
+          [code]="beforeCode"
+          label="Before"
+          labelClass="text-red-400 bg-red-500/10"
+        />
+        <app-code-snippet
+          [code]="afterCode"
+          label="After"
+          labelClass="text-emerald-400 bg-emerald-500/10"
+        />
+      </div>
+
+      <!-- Right: live demo -->
+      <div class="space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+
+          <!-- Clean panel -->
+          <div class="space-y-2">
+            <div class="flex gap-2">
+              <button
+                (click)="showClean.set(true)"
+                [disabled]="showClean()"
+                class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                Mount
+              </button>
+              <button
+                (click)="showClean.set(false)"
+                [disabled]="!showClean()"
+                class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-zinc-700/50 text-zinc-400 hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                Unmount
+              </button>
+            </div>
+            @if (showClean()) {
+              <app-destroyable-clean />
+            } @else {
+              <div class="rounded-lg border border-zinc-800 bg-zinc-900/50 p-4 h-[172px] flex items-center justify-center">
+                <span class="text-xs text-zinc-600">Component unmounted</span>
+              </div>
+            }
+          </div>
+
+          <!-- Leaky panel -->
+          <div class="space-y-2">
+            <div class="flex gap-2">
+              <button
+                (click)="showLeaky.set(true)"
+                [disabled]="showLeaky()"
+                class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-red-500/20 text-red-400 hover:bg-red-500/30 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                Mount
+              </button>
+              <button
+                (click)="showLeaky.set(false)"
+                [disabled]="!showLeaky()"
+                class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-zinc-700/50 text-zinc-400 hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                Unmount
+              </button>
+            </div>
+            @if (showLeaky()) {
+              <app-destroyable-leaky />
+            } @else {
+              <div class="rounded-lg border border-zinc-800 bg-zinc-900/50 p-4 h-[172px] flex items-center justify-center">
+                <span class="text-xs text-zinc-600">Component unmounted</span>
+              </div>
+            }
+          </div>
+
+        </div>
+
+        <!-- Shared event log -->
+        <app-event-log-panel />
+      </div>
+
+    </div>
+  </div>
+</section>

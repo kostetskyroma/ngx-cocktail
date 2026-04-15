@@ -1,0 +1,45 @@
+<div class="rounded-lg border border-zinc-800 bg-zinc-900 overflow-hidden">
+  <div class="flex items-center justify-between px-4 py-2 border-b border-zinc-800">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-xs font-medium text-zinc-400 uppercase tracking-wider">Activity Log</span>
+      @if (source) {
+        <span class="text-xs text-zinc-600">· {{ source }}</span>
+      }
+    </div>
+    <button
+      (click)="clear()"
+      class="text-xs text-zinc-600 hover:text-zinc-400 transition-colors cursor-pointer"
+    >
+      Clear
+    </button>
+  </div>
+
+  <div
+    #scrollContainer
+    class="h-48 overflow-y-auto p-2 space-y-1 font-mono text-xs"
+  >
+    @let allEntries = entries$ | async;
+    @if (!allEntries || allEntries.length === 0) {
+      <div class="flex items-center justify-center h-full text-zinc-600">
+        No activity yet
+      </div>
+    } @else {
+      @for (entry of allEntries; track entry.id) {
+        <div class="flex items-start gap-2 py-0.5">
+          <span class="text-zinc-600 shrink-0 pt-0.5">
+            {{ entry.timestamp | date:'HH:mm:ss' }}
+          </span>
+          <span
+            class="shrink-0 px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase"
+            [class]="badgeClass(entry.type)"
+          >
+            {{ entry.type }}
+          </span>
+          <span class="text-zinc-500 shrink-0">{{ entry.source }}</span>
+          <span class="text-zinc-300 break-all">{{ entry.message }}</span>
+        </div>
+      }
+    }
+  </div>
+</div>
