@@ -1,9 +1,10 @@
 [build]
-  command = "ng build"
+  command = "ng build demo-app"
   publish = "dist/demo-app/browser"
 
 [build.environment]
   NODE_VERSION = "22"
+  ANGULAR_PROJECT = "demo-app"
 
 [[redirects]]
   from = "/*"
