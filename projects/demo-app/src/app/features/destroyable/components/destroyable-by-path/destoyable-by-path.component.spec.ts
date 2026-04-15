@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { DestroyableByPathComponent } from './destoyable-by-path.component';
 
@@ -9,6 +10,7 @@ describe('DestroyableByPath', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [DestroyableByPathComponent],
+      providers: [provideRouter([])],
     }).compileComponents();
   });
 
