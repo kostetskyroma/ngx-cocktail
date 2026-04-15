@@ -7,6 +7,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
 [![GitHub license](https://img.shields.io/github/license/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/blob/master/LICENSE)
 
+**[Live Demo →](https://ngx-cocktail.netlify.app/#title)**
+
 A lightweight Angular library that provides declarative document title management through a feature-based approach. Set and manage page titles with minimal boilerplate code using Angular's feature system.
 
 ## ✨ Features
