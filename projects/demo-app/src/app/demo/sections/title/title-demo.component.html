@@ -42,7 +42,7 @@
               <svg class="w-3 h-3 text-zinc-500 shrink-0" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z"/>
               </svg>
-              <span class="text-xs text-zinc-300 truncate font-medium">
+              <span class="text-xs text-zinc-300 truncate font-medium" data-testid="mock-tab-title">
                 {{ currentTitle() || 'ngx-cocktail demo' }}
               </span>
               <svg class="w-2.5 h-2.5 text-zinc-600 shrink-0 ml-auto" fill="currentColor" viewBox="0 0 8 8">
@@ -57,7 +57,7 @@
             </div>
           </div>
           <!-- Viewport -->
-          <div class="bg-zinc-950 px-6 py-8 min-h-[80px] flex items-center justify-center">
+          <div class="bg-zinc-950 px-6 py-8 min-h-[80px] flex items-center justify-center" data-testid="title-viewport">
             @if (activePage() === 'none') {
               <p class="text-xs text-zinc-600 italic">Click a page button to activate a component</p>
             } @else {
@@ -78,6 +78,7 @@
             (click)="selectPage('a')"
             [class.ring-1]="activePage() === 'a'"
             [class.ring-sky-500]="activePage() === 'a'"
+            data-testid="page-a-btn"
             class="flex-1 px-4 py-3 rounded-lg border border-zinc-700 bg-zinc-800/50 hover:bg-zinc-800 transition-colors cursor-pointer text-left"
           >
             <div class="text-xs text-zinc-500 mb-0.5">@Features([TitleFeature(...)])</div>
@@ -88,6 +89,7 @@
             (click)="selectPage('b')"
             [class.ring-1]="activePage() === 'b'"
             [class.ring-sky-500]="activePage() === 'b'"
+            data-testid="page-b-btn"
             class="flex-1 px-4 py-3 rounded-lg border border-zinc-700 bg-zinc-800/50 hover:bg-zinc-800 transition-colors cursor-pointer text-left"
           >
             <div class="text-xs text-zinc-500 mb-0.5">@Features([TitleFeature(...)])</div>
@@ -96,6 +98,7 @@
           </button>
           <button
             (click)="selectPage('none')"
+            data-testid="reset-btn"
             class="px-4 py-3 rounded-lg border border-zinc-700 bg-zinc-800/50 hover:bg-zinc-800 transition-colors cursor-pointer text-zinc-500 text-sm"
           >
             Reset
