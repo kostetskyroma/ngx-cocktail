@@ -1,0 +1,30 @@
+<div class="rounded-lg border border-red-800/50 bg-red-950/30 p-4 h-full">
+  <div class="flex items-center justify-between mb-3">
+    <span class="text-sm font-semibold text-red-400">Without DestroyableFeature</span>
+    <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 ring-1 ring-red-500/30">
+      LEAKY
+    </span>
+  </div>
+
+  <div class="text-center py-4">
+    <div class="text-5xl font-bold tabular-nums text-red-300">
+      {{ counter() }}
+    </div>
+    <div class="mt-2 text-xs text-red-600">ticks since mount</div>
+  </div>
+
+  <div class="mt-3 text-xs text-zinc-500 space-y-1">
+    <div class="flex items-center gap-1.5">
+      <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+      <span>interval subscription running</span>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+      <span>no takeUntil, no ngOnDestroy</span>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+      <span>on unmount → keeps ticking!</span>
+    </div>
+  </div>
+</div>
