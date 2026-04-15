@@ -30,7 +30,11 @@ A foundational Angular library that provides the core infrastructure for feature
 ### Installation
 
 ```bash
+# Latest version (current Angular major)
 npm install @ngx-cocktail/common
+
+# Specific Angular version via dist-tag
+npm install @ngx-cocktail/common@v18
 ```
 
 ### Basic Usage
@@ -249,11 +253,21 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## 📦 Publishing
 
-1. Commit & push your changes
-2. Update a version in package.json
-3. Run `npm run build:common`
-4. Run `cd dist/common`
-5. Run `npm publish`
+Each release branch (`release/vN`) maps to one Angular major. Use dist-tags so `latest` always points to the current Angular major.
+
+**New Angular major** (publishes as `latest`):
+```bash
+npm run build:common
+cd dist/common && npm publish --access public
+```
+
+**Patch on an older version** (use `--tag` to avoid overwriting `latest`):
+```bash
+npm run build:common
+cd dist/common && npm publish --tag v18 --access public
+```
+
+See the [root README](https://github.com/kostetskyroma/ngx-cocktail#-publishing) for the full dist-tag workflow.
 
 ---
 

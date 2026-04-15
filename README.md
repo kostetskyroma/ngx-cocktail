@@ -234,19 +234,27 @@ function InheritableFeature() {
 
 ## 🔧 Compatibility
 
-| Angular Version | Library Version | Status       |
-| --------------- | --------------- | ------------ |
-| Angular 20      | >= v20.0.0      | ✅ Supported |
-| Angular 19      | >= v19.0.0      | ✅ Supported |
-| Angular 18      | >= v18.0.0      | ✅ Supported |
-| Angular 17      | >= v17.0.0      | ✅ Supported |
-| Angular 16      | >= v16.0.0      | ✅ Supported |
-| Angular 15      | >= v15.0.0      | ✅ Supported |
-| Angular 14      | >= v14.0.1      | ✅ Supported |
-| Angular 13      | >= v13.0.1      | ✅ Supported |
-| Angular 12      | >= v12.0.1      | ✅ Supported |
-| Angular 11      | >= v11.0.1      | ✅ Supported |
-| Angular 10      | >= v10.0.1      | ✅ Supported |
+| Angular Version | Library Version | npm tag   | Status       |
+| --------------- | --------------- | --------- | ------------ |
+| Angular 20      | >= v20.0.0      | `latest`  | ✅ Supported |
+| Angular 19      | >= v19.0.0      | `v19`     | ✅ Supported |
+| Angular 18      | >= v18.0.0      | `v18`     | ✅ Supported |
+| Angular 17      | >= v17.0.0      | `v17`     | ✅ Supported |
+| Angular 16      | >= v16.0.0      | `v16`     | ✅ Supported |
+| Angular 15      | >= v15.0.0      | `v15`     | ✅ Supported |
+| Angular 14      | >= v14.0.1      | `v14`     | ✅ Supported |
+| Angular 13      | >= v13.0.1      | `v13`     | ✅ Supported |
+| Angular 12      | >= v12.0.1      | `v12`     | ✅ Supported |
+| Angular 11      | >= v11.0.1      | `v11`     | ✅ Supported |
+| Angular 10      | >= v10.0.1      | `v10`     | ✅ Supported |
+
+Install for a specific Angular version using its npm tag:
+
+```bash
+npm install @ngx-cocktail/common@v18
+npm install @ngx-cocktail/destroyable@v18
+npm install @ngx-cocktail/title@v18
+```
 
 ## 📚 Best Practices
 
@@ -345,42 +353,70 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## 📦 Publishing
 
-### Publishing Individual Packages
+Each release branch (`release/vN`) maps to one Angular major version. npm **dist-tags** (`latest`, `v20`, `v18`, …) let users install the right version for their Angular version without knowing exact patch numbers.
 
-Each package can be published independently:
+### dist-tags
 
-#### @ngx-cocktail/common
+| Tag      | Resolves to           | Who it's for                        |
+| -------- | --------------------- | ----------------------------------- |
+| `latest` | newest Angular major  | `npm install @ngx-cocktail/common`  |
+| `v20`    | latest patch for v20  | Angular 20 users pinned to that tag |
+| `v18`    | latest patch for v18  | Angular 18 users pinned to that tag |
+| …        | …                     | …                                   |
 
-1. Commit & push your changes
-2. Update a version in `projects/common/package.json`
-3. Run `npm run build:common`
-4. Run `cd dist/common`
-5. Run `npm publish`
+> **Rule:** always publish with the default tag (`latest`) for the current Angular major. Always pass `--tag vN` for older Angular versions so `latest` is never overwritten.
 
-#### @ngx-cocktail/destroyable
+### Publishing a new Angular major (e.g. Angular 22)
 
-1. Commit & push your changes
-2. Update a version in `projects/destroyable/package.json`
-3. Run `npm run build:destroyable`
-4. Run `cd dist/destroyable`
-5. Run `npm publish`
+```bash
+git checkout release/v22
+npm install                        # get correct Angular version
 
-#### @ngx-cocktail/title
+npm run build:common
+npm run build:destroyable
+npm run build:title
 
-1. Commit & push your changes
-2. Update a version in `projects/title/package.json`
-3. Run `npm run build:title`
-4. Run `cd dist/title`
-5. Run `npm publish`
+# No --tag: defaults to "latest"
+cd dist/common && npm publish --access public && cd ../..
+cd dist/destroyable && npm publish --access public && cd ../..
+cd dist/title && npm publish --access public && cd ../..
+```
 
-### Publishing All Packages
+### Publishing a patch to an older version
 
-To publish all packages at once:
+```bash
+git checkout release/v18
+# bump version in projects/*/package.json first
+npm install
 
-1. Commit & push your changes
-2. Update versions in all package.json files
-3. Run `npm run build`
-4. Navigate to each `dist/` directory and run `npm publish`
+npm run build:common
+npm run build:destroyable
+npm run build:title
+
+# --tag v18 prevents overwriting "latest"
+cd dist/common && npm publish --tag v18 --access public && cd ../..
+cd dist/destroyable && npm publish --tag v18 --access public && cd ../..
+cd dist/title && npm publish --tag v18 --access public && cd ../..
+```
+
+### Adding a dist-tag to an already-published version
+
+```bash
+npm dist-tag add @ngx-cocktail/common@18.0.0 v18
+npm dist-tag add @ngx-cocktail/destroyable@18.0.3 v18
+npm dist-tag add @ngx-cocktail/title@18.0.1 v18
+```
+
+### Verifying tags
+
+```bash
+npm dist-tag ls @ngx-cocktail/common
+# latest: 21.0.1
+# v20: 20.0.1
+# v19: 19.0.0
+# v18: 18.0.0
+# …
+```
 
 ## 🎉 Acknowledgments
 
