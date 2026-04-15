@@ -25,7 +25,11 @@ A lightweight Angular library that provides automatic subscription cleanup throu
 ### Installation
 
 ```bash
+# Latest version (current Angular major)
 npm install @ngx-cocktail/destroyable
+
+# Specific Angular version via dist-tag
+npm install @ngx-cocktail/destroyable@v18
 ```
 
 ### Basic Usage
@@ -190,11 +194,21 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## 📦 Publishing
 
-1. Commit & push your changes
-2. Update a version in package.json
-3. Run `npm run build:destroyable`
-4. Run `cd dist/destroyable`
-5. Run `npm publish`
+Each release branch (`release/vN`) maps to one Angular major. Use dist-tags so `latest` always points to the current Angular major.
+
+**New Angular major** (publishes as `latest`):
+```bash
+npm run build:destroyable
+cd dist/destroyable && npm publish --access public
+```
+
+**Patch on an older version** (use `--tag` to avoid overwriting `latest`):
+```bash
+npm run build:destroyable
+cd dist/destroyable && npm publish --tag v18 --access public
+```
+
+See the [root README](https://github.com/kostetskyroma/ngx-cocktail#-publishing) for the full dist-tag workflow.
 
 ---
 
