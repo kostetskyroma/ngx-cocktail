@@ -7,6 +7,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
 [![GitHub license](https://img.shields.io/github/license/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/blob/master/LICENSE)
 
+**[Live Demo →](https://ngx-cocktail.netlify.app/)**
+
 A foundational Angular library that provides the core infrastructure for feature-based component and directive enhancement. This library enables the use of Angular Ivy's feature system to create reusable, composable features that can be applied to components and directives through decorators.
 
 ## ⚠️ Experimental Status
