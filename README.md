@@ -411,8 +411,7 @@ npm dist-tag add @ngx-cocktail/title@18.0.1 v18
 
 ```bash
 npm dist-tag ls @ngx-cocktail/common
-# latest: 21.0.1
-# v20: 20.0.1
+# latest: 20.0.1
 # v19: 19.0.0
 # v18: 18.0.0
 # …
