@@ -82,9 +82,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": {
-              "base": "dist/demo-app"
-            },
+            "outputPath": "dist/demo-app",
             "index": "projects/demo-app/src/index.html",
             "polyfills": [
               "projects/demo-app/src/polyfills.ts"
