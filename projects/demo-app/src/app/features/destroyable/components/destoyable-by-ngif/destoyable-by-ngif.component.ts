@@ -1,8 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { Features } from '@ngx-cocktail/common';
-import { DestroyableFeature } from '@ngx-cocktail/destroyable';
+import { Features, DestroyableFeature } from '@ngx-cocktail/destroyable';
 import { DestroyableByNgifChildComponent } from '../destoyable-by-ngif-child';
-
 
 @Component({
   selector: 'app-destoyable-by-ngif',
