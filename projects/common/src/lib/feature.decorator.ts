@@ -6,7 +6,10 @@ type Feature = DirectiveFeature | ComponentFeature;
 
 function FeaturesDecorator(features: Feature[]) {
   return <T>(componentType: Type<T>) => {
-    Promise.resolve().then(() => {
+    // queueMicrotask defers execution to the next microtask checkpoint, after
+    // Angular's JIT compiler has finished attaching ɵcmp/ɵdir to the class.
+    // Without this deferral, ɵcmp/ɵdir may not yet be present when the decorator runs.
+    queueMicrotask(() => {
       const def = componentType as ɵDirectiveType<T> & ɵComponentType<T>;
 
       if (!def.ɵcmp && !def.ɵdir) {

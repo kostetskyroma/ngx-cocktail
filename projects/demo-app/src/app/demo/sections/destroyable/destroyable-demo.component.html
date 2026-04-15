@@ -43,11 +43,12 @@
       <div class="space-y-4">
         <div class="grid grid-cols-2 gap-3">
           <!-- Clean panel -->
-          <div class="space-y-2">
+          <div class="space-y-2" data-testid="clean-panel">
             <div class="flex gap-2">
               <button
                 (click)="showClean.set(true)"
                 [disabled]="showClean()"
+                data-testid="mount-btn"
                 class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
               >
                 Mount
@@ -55,6 +56,7 @@
               <button
                 (click)="showClean.set(false)"
                 [disabled]="!showClean()"
+                data-testid="unmount-btn"
                 class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-zinc-700/50 text-zinc-400 hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
               >
                 Unmount
@@ -72,11 +74,12 @@
           </div>
 
           <!-- Leaky panel -->
-          <div class="space-y-2">
+          <div class="space-y-2" data-testid="leaky-panel">
             <div class="flex gap-2">
               <button
                 (click)="showLeaky.set(true)"
                 [disabled]="showLeaky()"
+                data-testid="mount-btn"
                 class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-red-500/20 text-red-400 hover:bg-red-500/30 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
               >
                 Mount
@@ -84,6 +87,7 @@
               <button
                 (click)="showLeaky.set(false)"
                 [disabled]="!showLeaky()"
+                data-testid="unmount-btn"
                 class="flex-1 px-3 py-1.5 rounded text-xs font-medium bg-zinc-700/50 text-zinc-400 hover:bg-zinc-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
               >
                 Unmount
@@ -103,7 +107,7 @@
 
         <!-- Shared event log -->
         <div class="pt-4">
-          <app-event-log-panel />
+          <app-event-log-panel data-testid="event-log" />
         </div>
       </div>
     </div>
