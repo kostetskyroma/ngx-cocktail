@@ -7,6 +7,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/stargazers)
 [![GitHub license](https://img.shields.io/github/license/kostetskyroma/ngx-cocktail)](https://github.com/kostetskyroma/ngx-cocktail/blob/master/LICENSE)
 
+**[Live Demo →](https://ngx-cocktail.netlify.app/#destroyable)**
+
 A lightweight Angular library that provides automatic subscription cleanup through a feature-based approach. Eliminate memory leaks by automatically managing RxJS subscriptions with minimal boilerplate code.
 
 ## ✨ Features
