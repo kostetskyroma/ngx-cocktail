@@ -19,9 +19,9 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10",
-    "@ngx-cocktail/common": "file:dist/common",
-    "@ngx-cocktail/destroyable": "file:dist/destroyable",
-    "@ngx-cocktail/title": "file:dist/title"
+    "@ngx-cocktail/common": "^18.0.1",
+    "@ngx-cocktail/destroyable": "^18.0.4",
+    "@ngx-cocktail/title": "^18.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.20",
