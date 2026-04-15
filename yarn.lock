@@ -172,13 +172,6 @@
     ora "9.3.0"
     rxjs "7.8.2"
 
-"@angular/animations@^21.2.8":
-  version "21.2.8"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-21.2.8.tgz#e6cbadfcbd93944520449730c6b7349ae31c7697"
-  integrity sha512-RIqfVmfretQ0x/mXgMXe7Bw0Tpe8+zBV/Mm2OaNVyrmNG+9gYItEn5t/ZnQGcPD5nMNqckgp3+4/ZMc/qkS5ww==
-  dependencies:
-    tslib "^2.3.0"
-
 "@angular/build@^21.2.7":
   version "21.2.7"
   resolved "https://registry.yarnpkg.com/@angular/build/-/build-21.2.7.tgz#7f7abf49b3d520de4d0bbb7054df3dc38ba46565"
@@ -271,14 +264,6 @@
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-21.2.8.tgz#6c7f1632195318ddebb243dd84a814b86211b1d1"
   integrity sha512-hI7n4t8qgFJaVV55LIaNuzcdP+/IeuqQRu3huSLo47Gf6uZAD0Acj4Ye9SC8YNmhUu5/RiImngm9NOlcI2oCJA==
   dependencies:
-    tslib "^2.3.0"
-
-"@angular/forms@^21.2.8":
-  version "21.2.8"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-21.2.8.tgz#1957a46e793fbc63b194450f3e037ed85ed7006d"
-  integrity sha512-tyQAHjfMHcqETRkKQaZHjYqIK9W8uRenPpY2DF/Jl+S7CwcaX4T8t8TKgzvTynNzQW9QGiLg0pqVosVMKzBXJg==
-  dependencies:
-    "@standard-schema/spec" "^1.0.0"
     tslib "^2.3.0"
 
 "@angular/platform-browser-dynamic@^21.2.8":
@@ -1967,11 +1952,6 @@
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.2.tgz#821f8442f4175d8f0467b9daf26e3a18e2d02af2"
   integrity sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==
-
-"@standard-schema/spec@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@standard-schema/spec/-/spec-1.1.0.tgz#a79b55dbaf8604812f52d140b2c9ab41bc150bb8"
-  integrity sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==
 
 "@tufjs/canonical-json@2.0.0":
   version "2.0.0"
