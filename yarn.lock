@@ -1360,18 +1360,24 @@
   dependencies:
     "@tybys/wasm-util" "^0.10.1"
 
-"@ngx-cocktail/common@file:dist/common":
+"@ngx-cocktail/common@^21.0.0":
   version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-cocktail/common/-/common-21.0.0.tgz#31aa2d7bcf9dcc9d1a11f369125dda6401fee4ba"
+  integrity sha512-AaZLzfnGqcXG7h/d7EHv7N/EHjL0DVkUJYI3DxnNKOTW+bu1d6mDDfmv7aTTJwSWpXgACJwxYbRKC4yFUPcxlg==
   dependencies:
     tslib "^2.3.0"
 
-"@ngx-cocktail/destroyable@file:dist/destroyable":
+"@ngx-cocktail/destroyable@^21.0.0":
   version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-cocktail/destroyable/-/destroyable-21.0.0.tgz#3369e69020df4121d3d9bee6d89e1925d0b68dde"
+  integrity sha512-FypPSuqg3tha6/fdhZqzTjEvFvXZ0YI3ihc3xSJehqL+iFaaUBvroKUrbzQcUPaVMGJAid08g48tKIRhYzhfXw==
   dependencies:
     tslib "^2.3.0"
 
-"@ngx-cocktail/title@file:dist/title":
+"@ngx-cocktail/title@^21.0.0":
   version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-cocktail/title/-/title-21.0.0.tgz#c96bc5c30d8b57dfbc73837b233ec305d448a448"
+  integrity sha512-npfRcS1phIYcZSvYx8DSuVt9Z5wR540UoUUOS1dFAonTqsnBUbmnfH33jg9StYuSo+MtkboDVRYQhIX59F4IUg==
   dependencies:
     tslib "^2.3.0"
 
