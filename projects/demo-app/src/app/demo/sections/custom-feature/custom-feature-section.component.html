@@ -1,0 +1,40 @@
+<section class="py-16 border-t border-zinc-800/50">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <span class="px-2 py-1 rounded text-xs font-mono font-semibold bg-zinc-800 text-zinc-400">
+            @ngx-cocktail/common
+          </span>
+        </div>
+        <h2 class="text-2xl font-bold text-zinc-100 mb-3">Write your own feature</h2>
+        <p class="text-zinc-500 text-sm leading-relaxed mb-4">
+          A feature is just a function that receives the Ivy component definition object
+          (<code class="text-zinc-300 font-mono">ɵComponentDef</code>) and mutates it.
+          Wrap <code class="text-zinc-300 font-mono">def.factory</code> to run logic at instantiation time —
+          you get full access to the DI context via <code class="text-zinc-300 font-mono">inject()</code>.
+        </p>
+        <ul class="space-y-2 text-sm text-zinc-500">
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5">→</span>
+            Features compose — pass multiple to <code class="text-zinc-400 font-mono">@Features([...])</code>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5">→</span>
+            Mark with <code class="text-zinc-400 font-mono">ngInherit: true</code> to propagate to subclasses
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5">→</span>
+            Works with both <code class="text-zinc-400 font-mono">ComponentFeature</code> and <code class="text-zinc-400 font-mono">DirectiveFeature</code>
+          </li>
+        </ul>
+      </div>
+
+      <app-code-snippet [code]="customCode" label="Custom Feature" />
+
+    </div>
+
+  </div>
+</section>
