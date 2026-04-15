@@ -9,7 +9,11 @@
     "build:destroyable": "npm run build destroyable",
     "build:title": "npm run build title",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "e2e": "playwright test --config=e2e/playwright.config.ts",
+    "e2e:ui": "playwright test --config=e2e/playwright.config.ts --ui",
+    "e2e:debug": "playwright test --config=e2e/playwright.config.ts --debug",
+    "e2e:report": "playwright show-report playwright-report"
   },
   "dependencies": {
     "@angular/common": "^21.2.8",
@@ -29,6 +33,7 @@
     "@angular/compiler": "^21.2.8",
     "@angular/compiler-cli": "^21.2.8",
     "@angular/platform-browser-dynamic": "^21.2.8",
+    "@playwright/test": "^1.59.1",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "autoprefixer": "^10.5.0",
