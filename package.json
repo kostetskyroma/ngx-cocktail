@@ -16,9 +16,9 @@
     "@angular/core": "^19.2.14",
     "@angular/platform-browser": "^19.2.14",
     "@angular/router": "^19.2.14",
-    "@ngx-cocktail/common": "file:dist/common",
-    "@ngx-cocktail/destroyable": "file:dist/destroyable",
-    "@ngx-cocktail/title": "file:dist/title",
+    "@ngx-cocktail/common": "^19.0.1",
+    "@ngx-cocktail/destroyable": "^19.0.1",
+    "@ngx-cocktail/title": "^19.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.1"
