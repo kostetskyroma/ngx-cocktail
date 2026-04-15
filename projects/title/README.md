@@ -129,6 +129,7 @@ export class AdvancedComponent {
 
 | Angular Version | Library Version |
 | --------------- | --------------- |
+| Angular 21      | >= v21.0.0      |
 | Angular 20      | >= v20.0.0      |
 | Angular 19      | >= v19.0.0      |
 | Angular 18      | >= v18.0.0      |

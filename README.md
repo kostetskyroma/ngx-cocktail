@@ -9,6 +9,8 @@
 
 A comprehensive Angular library suite that leverages Angular Ivy's component features to provide powerful, composable functionality for modern Angular applications. Built with a feature-based architecture that enables clean, declarative code with minimal boilerplate.
 
+**[Live Demo →](https://ngx-cocktail.netlify.app/)**
+
 ## 🎯 What is ngx-cocktail?
 
 ngx-cocktail is a collection of Angular libraries that utilize Angular Ivy's internal component features system to provide enhanced functionality for components and directives. Instead of traditional decorators, ngx-cocktail uses Angular's feature system to add, remove, or modify component traits at runtime.
@@ -236,6 +238,7 @@ function InheritableFeature() {
 
 | Angular Version | Library Version | Status       |
 | --------------- | --------------- | ------------ |
+| Angular 21      | >= v21.0.0      | ✅ Supported |
 | Angular 20      | >= v20.0.0      | ✅ Supported |
 | Angular 19      | >= v19.0.0      | ✅ Supported |
 | Angular 18      | >= v18.0.0      | ✅ Supported |
