@@ -1,0 +1,46 @@
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: headline -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-700 bg-zinc-800/50 text-xs text-zinc-400 mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          Angular Ivy feature injection
+        </div>
+
+        <h1 class="text-5xl font-bold tracking-tight text-zinc-100 mb-4">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-400">@ngx-cocktail</span>
+        </h1>
+
+        <p class="text-lg text-zinc-400 mb-8 leading-relaxed">
+          Add behaviour to Angular components at the Ivy definition level —
+          <span class="text-zinc-200">zero boilerplate</span>,
+          one decorator.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-800 border border-zinc-700 text-xs text-zinc-300">
+            <span class="text-emerald-400">✓</span> Auto-cleanup subscriptions
+          </span>
+          <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-800 border border-zinc-700 text-xs text-zinc-300">
+            <span class="text-emerald-400">✓</span> Automatic page titles
+          </span>
+          <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-800 border border-zinc-700 text-xs text-zinc-300">
+            <span class="text-emerald-400">✓</span> Composable &amp; extensible
+          </span>
+        </div>
+
+        <!-- Install command -->
+        <app-code-snippet [code]="installCode" label="Install" />
+      </div>
+
+      <!-- Right: usage snippet -->
+      <div>
+        <app-code-snippet [code]="usageCode" label="Usage" />
+      </div>
+
+    </div>
+  </div>
+</section>
